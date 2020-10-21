@@ -21,7 +21,6 @@ public class ArrayReversal {
                  
                   for(int m = backw - 1; m >= 0; m--){
                       System.out.print(array[m] + " ");
-                      
                   }
      
       
