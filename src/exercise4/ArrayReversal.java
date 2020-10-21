@@ -10,7 +10,7 @@ public class ArrayReversal {
         System.out.println("Enter the size of the Array: ");
         System.out.println("Enter text: ");
         char[] array = new char[];
-        for(){
+        for(int index = ; index){
 
             for(int i = array.length - 1; i >= 0; i--){
             System.out.print(array[i] + " ");
