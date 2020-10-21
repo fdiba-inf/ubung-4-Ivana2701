@@ -6,21 +6,26 @@ import java.util.Scanner;
 public class ArrayReversal {
  
     public static void main(String[] args) {
+
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter the size of the Array: ");
+        System.out.println("Enter the size of the Array: ");          
+        int size = input.nextInt();
+
         System.out.println("Enter text: ");
-        char[] array = new char[];
-        for(int index = ; index){
+        String text = input.next();
 
-            for(int i = array.length - 1; i >= 0; i--){
-            System.out.print(array[i] + " ");
- 
-        }
-        System.out.print("Reversed: ");
- 
-}
+        char[] array = new char[0];
+        int n = array.length;
+    
+        
+        for(int i = 0; i < n; i++){
+            
+                  for(int m = array.length - 1; m >= 0; m--){
+                  System.out.print(array[m] + " ");
+                  }
 
- System.out.println(name1[1]);
+       System.out.print("Reversed symbols: ");
  
+      }
     }
 }
