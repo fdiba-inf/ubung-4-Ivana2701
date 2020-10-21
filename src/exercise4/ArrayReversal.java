@@ -9,18 +9,19 @@ public class ArrayReversal {
 
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the size of the Array: ");          
-        int size = input.nextInt();
+        int arrayLenght = input.nextInt();
+        int backw = arrayLenght;
 
         System.out.println("Enter text: ");
         String text = input.next();
-
-        char[] array = new char[0];
-        int n = array.length;
+       
+        char[] array =  text.charAt[0];
+    
     
         
-        for(int i = 0; i < n; i++){
+        for(int i = 0; i < arrayLenght; i++){
             
-                  for(int m = array.length - 1; m >= 0; m--){
+                  for(int m = backw - 1; m >= 0; m--){
                   System.out.print(array[m] + " ");
                   }
 
