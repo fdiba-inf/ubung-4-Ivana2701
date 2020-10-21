@@ -18,15 +18,15 @@ public class MaxElement {
                      numbers[index] = input.nextDouble();
            
                          if(numbers[index] > max){
+                          max = numbers[index];
+                          }
 
-                      max = numbers[index];
-           }
+                        else{
+                          max = max;
+                        }
            
-           else{
-             max = max;
-           }
-           
-           }
+                }
+                
             System.out.println("Max number: " + max);
         
     }
