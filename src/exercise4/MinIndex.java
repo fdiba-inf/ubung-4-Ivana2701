@@ -9,14 +9,27 @@ public class MinIndex {
         Scanner input = new Scanner(System.in);
 
             System.out.print("Enter the size for the array: ");
-            int size = input.nextInt();
+            int n = input.nextInt();
+            
             System.out.println("Enter the array numbers: ");
-            double numbers[] = new double[size];
-                for (int index = 0; index < numbers.length; index++) {
+                int index = 0;
+    float minValue = Float.MAX_VALUE;
+    
+    float[] array = new float[n];
 
-            numbers[index] = input.nextDouble();
-            System.out.println("MIn Index: " + Math.max(numbers);
-           }
+    for(int i = 0; i < array.length; i++){
+      array[i] = input.nextFloat();
+    }
+
+    for(int i = 0; i < array.length; i++){
+
+      if(array[i] < minValue){
+        minValue = array[i];
+        index = i;
+      }
+    }
+
+    System.out.println("Min index: " + index);
         
     }
 
