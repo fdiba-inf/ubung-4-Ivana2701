@@ -13,17 +13,14 @@ public class ArrayReversal {
         int backw = size;
 
         System.out.println("Enter text: ");
-        String text = input.next();
-       
-        char[] array =  text.toCharArray(); 
-        
-           
-                 
+
+        String text = input.next();       
+        char[] array =  text.toCharArray();      
+                            
                   for(int m = backw - 1; m >= 0; m--){
                       System.out.print(array[m] + " ");
-                  }
-     
-      
+                  }  
+                      
      
     }
 }
