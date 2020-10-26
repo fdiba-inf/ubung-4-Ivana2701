@@ -9,18 +9,22 @@ public class ArrayReversal {
 
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the size of the Array: ");          
-        int size = input.nextInt();
-        int backw = size;
+          int size = input.nextInt();
+          char[] arrayText = new char[size];
+          char[] reversed = new char[arrayText.length];
+        
+         System.out.println("Enter array elements: ");
 
-        System.out.println("Enter text: ");
-
-        String text = input.next();       
-        char[] array =  text.toCharArray();      
-                            
-                  for(int m = backw - 1; m >= 0; m--){
-                     String reversedAsString= array[m] + " ";                  
-                  }  
-
+        for (int i = 0; i < arrayText.length; i++ ) {
+          arrayText[i] = input.next().charAt(0);
+        }
+        for (int i = 0; i < arrayText.length; i++){
+          reversed[i] = arrayText[arrayText.length-1-i];
+        }
+        
+    String reversedAsString = Arrays.toString(reversed);
+    System.out.println("Reversed symbols: " + reversedAsString);
+  
      
     }
 }
