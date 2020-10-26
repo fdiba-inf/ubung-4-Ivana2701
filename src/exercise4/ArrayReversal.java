@@ -18,9 +18,9 @@ public class ArrayReversal {
         char[] array =  text.toCharArray();      
                             
                   for(int m = backw - 1; m >= 0; m--){
-                      System.out.print(array[m] + " ");
+                     String reversedAsString= array[m] + " ";                  
                   }  
-                      
+
      
     }
 }
